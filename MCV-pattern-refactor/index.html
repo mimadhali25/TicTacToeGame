@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+<script
+      src="https://kit.fontawesome.com/3bfd3ce9e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <main>
+        <div class="grid">
+            <div class="turn" data-id="turn">
+                <i class="fa-solid fa-x" data-id="turnicon"></i>
+                <p data-id="turntext">Player 1, You can go!</p>
+            </div>
+            <div class="actions" data-id="actions">
+                <button class="btn-1">
+                    Actions
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="items border hidden" data-id="actionsitems">
+                    <button data-id="resetbtn">Reset</button>
+                    <button data-id="newround">New Round</button>
+                </div>
+            </div>
+            <div id ="1" class="square shadow" data-id="square"></div>
+            <div id ="2" class="square shadow" data-id="square"></div>
+            <div id ="3" class="square shadow" data-id="square"></div>
+            <div id ="4" class="square shadow" data-id="square"></div>
+            <div id ="5" class="square shadow" data-id="square"></div>
+            <div id ="6" class="square shadow" data-id="square"></div>
+            <div id ="7" class="square shadow" data-id="square"></div>
+            <div id ="8" class="square shadow" data-id="square"></div>
+            <div id ="9" class="square shadow" data-id="square"></div>
+            <div class="player shadow" style="color:yellow" data-id="resultp1"> 
+                <p data-id="resulttextp1">Player 1</p>
+                <span class="p1wins" data-id="resultspanp1">0 Wins</span>
+            </div>
+            <div class="player shadow" style="color: white;" data-id="resulttie">
+                <p data-id="resulttexttie">Ties</p>
+                <span class="ties" data-id="resultspantie">0</span>
+            </div>
+            <div class="player shadow" style="color: aqua;" data-id="resultp2">
+                <p data-id="resulttextp2">Player 2</p>
+                <span class="p2wins" data-id="resultspanp2">0 Wins</span>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p> Tic Tac Toe Game </p>
+        <p>Made by <a href="https://mimadhali21.wixstudio.com/mysite">Mima</a></p>
+    </footer>
+    <div class="model hidden" data-id="model">
+        <div class="modelcontainer" data-id="modelcontainer">
+            <p class="winner" data-id="modeltext">Player 1 Wins!</p>
+            <button class="again shadow" data-id="modelbutton">Play Again</button>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
